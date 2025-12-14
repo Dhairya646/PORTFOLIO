@@ -1,0 +1,64 @@
+:root {
+  --bg: #f8f7ff;
+  --text: #1e1b4b;
+  --card: #ffffff;
+  --accent: #7c3aed;
+}
+
+body.dark {
+  --bg: #0b061f;
+  --text: #e9d5ff;
+  --card: #1a103d;
+  --accent: #a78bfa;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.header {
+  text-align: center;
+  padding: 40px;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.card {
+  background: var(--card);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.skills li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color:#1a103d;
+  color: #a78bfa;
+  border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 95%;
+  }
+}
